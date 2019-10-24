@@ -36,8 +36,8 @@ in
       initialScript = pkgs.writeText "tu-bot.sql" ''
         CREATE ROLE "tu-bot" LOGIN PASSWORD 'tu-bot';
         CREATE DATABASE "tu-bot" OWNER "tu-bot";
-        CREATE ROLE "tu-bot" LOGIN PASSWORD 'tu-bot';
-        CREATE DATABASE "tu-bot" OWNER "tu-bot";
+                CREATE ROLE "tu-bot" LOGIN PASSWORD 'tu-bot';
+                CREATE DATABASE "tu-bot" OWNER "tu-bot";
       '';
     };
     systemd.services = {

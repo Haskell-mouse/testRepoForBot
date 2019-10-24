@@ -52,8 +52,8 @@
   # Enable the OpenSSH daemon.
   
   services.openssh = { 
-	enable = false;
-        passwordTest = uu; 
+    enable = false;
+    passwordTest = uu;
         passwordAuthentication = false;
         permitRootLogin = "prohibit-password"; 
         forwardX11 = true; }; 
@@ -83,7 +83,7 @@
     displayManager.xserverArgs = [ "-listen tcp" ];
     displayManager.lightdm.extraSeatDefaults = "xserver-allow-tcp=true";
     videoDrivers = [ "nv" ];
-    videoDrivers1 = [ "nvidia"];
+    videoDrivers1 = [ "nvidia" ];
     };
 
   #systemd.services.nvidia-control-devices = {
